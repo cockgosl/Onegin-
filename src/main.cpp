@@ -5,8 +5,7 @@
 #include "comparator.h"
 #include "my_strcmp.h"
 #include "bubble_sort.h"
-// TODO: .gitignore что делает . COMMIT IT HELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLll
-// How to compile from different folders
+
 int main() {
     char* buffer = NULL;
     char** pointer_array = NULL;
@@ -22,3 +21,4 @@ int main() {
     free (pointer_array);
     free (buffer);
 }
+
