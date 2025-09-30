@@ -19,4 +19,6 @@ int main() {
     for (unsigned int j = 0; j < nLines; j++) {
         printf ("%s\n", pointer_array[j]);
     }
+    free (pointer_array);
+    free (buffer);
 }
