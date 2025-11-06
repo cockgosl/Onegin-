@@ -3,4 +3,4 @@
 #include <stdlib.h>
 #include <assert.h>
 
-char** Initpointerarr(char* buffer, size_t* nLines);
+char** Init_Pointer_Arr(char* buffer, size_t* nLines);
