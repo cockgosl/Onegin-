@@ -4,7 +4,7 @@ CPPOBJ := build/bubble_sort.o build/comparator.o build/main.o build/my_strcmp.o 
 all: main.exe
 
 main.exe: $(CPPOBJ) 
-	g++ $(CXXFLAGS) $(CPPOBJ) -o main.exe
+	g++ $(CXXFLAGS) $(CPPOBJ) -o main
 
 build/bubble_sort.o : src/bubble_sort.cpp
 	g++ $(CXXFLAGS) -c $< -o $@

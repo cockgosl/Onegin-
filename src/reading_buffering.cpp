@@ -11,7 +11,13 @@ char* ReadBuffer(FILE* text, size_t* size) {
 
     *size = statistic.st_size;;
     buffer = (char*) calloc(sizeof (char), *size + 1);
-    buffer[*size] = '\0';
-    fread (buffer, sizeof(char), *size, text); 
+    if (buffer) {
+        buffer[*size] = '\0';
+        fread (buffer, sizeof(char), *size, text);
+    }
+    else {
+        printf ("memory cannot be allocated");
+    }
+    
     return buffer;   
 }
